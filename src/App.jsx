@@ -10,14 +10,16 @@ import Profile from "./pages/Profile"
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<MainLayout />} />
+      <Route path="/" element={<MainLayout />} >
       <Route index element={<Events />} />
       <Route path="/events/:id" element={<Event />} />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
       <Route path="/profile" element={<Profile />} />
+      </Route>
     </Routes>
   );
 }
 
 export default App
+
